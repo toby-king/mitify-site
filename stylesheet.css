@@ -406,6 +406,7 @@ footer p {
 @media screen and (max-width: 768px) {
     .navbar-nav {
         flex-direction: row;
+        flex-wrap: wrap;
     }
     .navbar-collapse {
         justify-content: center !important;
