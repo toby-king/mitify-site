@@ -40,9 +40,15 @@ a:hover {
     max-width: 80vw;
     margin: 0 auto;
 }
-.header {
+.no-webp .header {
     max-height: 85vh;
     background-image: url("assets/images/header3.png");
+    background-size: cover;
+    background-position: center;
+}
+.webp .header {
+    max-height: 85vh;
+    background-image: url("assets/images/webp/header.webp");
     background-size: cover;
     background-position: center;
 }
@@ -132,7 +138,7 @@ input[type="checkbox"]:checked ~ .hamburger {
 .title {
     color: #02498B;
     font-weight: 800;
-    letter-spacing: 4.8px;
+    letter-spacing: 2px;
 }
 .subtitle {
     text-transform: capitalize;
@@ -190,9 +196,16 @@ input[type="checkbox"]:checked ~ .hamburger {
 }
 .mission p {
     line-height: 175%; /* 63px */
-    letter-spacing: 3.6px;
+    letter-spacing: 2px;
     font-size: 1.6rem;
     width: 90%;
+}
+.state {
+    width: 80%;
+    margin: 2rem auto;
+}
+.state p, .state li {
+    font-size: 1.2rem;
 }
 .solutions {
     margin-top: 5rem;

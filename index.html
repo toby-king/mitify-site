@@ -17,7 +17,7 @@
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-
+        <script src="modernizr.js"></script>
         
         <link rel="icon" href="favicon.ico">
         <link rel="stylesheet" href="stylesheet.css">
@@ -56,7 +56,11 @@
                         <a href="#solutions"><button>Disover our Solution</button></a>
                     </div>
                     <div class="col-lg-6 mockup-container animate-reveal-y delay">
-                        <img src="assets/images/mockup.png" alt="Phone Mockup" id="mockup">
+                        <picture>
+                            <source type="image/webp" srcset="assets/images/webp/mockup.webp">
+                            <source type="image/png" srcset="assets/images/mockup.png">
+                            <img src="assets/images/mockup.png" alt="Phone Mockup" id="mockup">
+                        </picture>
                     </div>
                 </div>
             </div>
@@ -67,17 +71,29 @@
                 </div>
                 <div class="services row">
                     <div class="col-md-4">
-                        <img src="assets/images/dd.png" alt="Disinformation Detection">
+                        <picture>
+                            <source type="image/webp" srcset="assets/images/webp/dd.webp">
+                            <source type="image/png" srcset="assets/images/dd.png">
+                            <img src="assets/images/dd.png" alt="Disinformation Detection">
+                        </picture>
                         <h4>Disinformation Detection</h4>
                         <p>Disinformation is the single greatest threat to democracy and presents one of the most pressing challenges of our time! This will only worsen with the acceleration and availability of artificial intelligence.</p>
                     </div>
                     <div class="col-md-4">
-                        <img src="assets/images/bias.png" alt="Political Bias">
+                        <picture>
+                            <source type="image/webp" srcset="assets/images/webp/bias.webp">
+                            <source type="image/png" srcset="assets/images/bias.png">
+                            <img src="assets/images/bias.png" alt="Political Bias">
+                        </picture>
                         <h4>Political Bias</h4>
                         <p>News bias can create inequitable outcomes for society's most vulnerable people when leveraged by those with power and privilege!</p>
                     </div>
                     <div class="col-md-4">
-                        <img src="assets/images/echo.png" alt="Anti-Echo">
+                        <picture>
+                            <source type="image/webp" srcset="assets/images/webp/echo.webp">
+                            <source type="image/png" srcset="assets/images/echo.png">
+                            <img src="assets/images/echo.png" alt="Anti-Echo">
+                        </picture>
                         <h4>Anti-Echo</h4>
                         <p>Digital media has become a battleground of hearts and minds, creating echo chambers that reinforce society's views and prohibit objective opinion.</p>
                     </div>
@@ -86,12 +102,36 @@
             <div class="mission">
                 <div class="mission-container row">
                     <div class="col-lg-6">
-                        <img src="assets/images/mission.png" alt="Our Mission" id="mission-img">
+                        <picture>
+                            <source type="image/webp" srcset="assets/images/webp/mission.webp">
+                            <source type="image/png" srcset="assets/images/mission.png">
+                            <img src="assets/images/mission.png" alt="Our Mission" id="mission-img">
+                        </picture>
                     </div>
                     <div class="col-lg-6 mission-content">
                         <h1 class="title">Our Mission</h1>
                         <p>To empower people to identify disinformation and mitigate its harmful effects in a seamless and elegant way.</p>
                     </div>
+                </div>
+            </div>
+            <div class="state row">
+                <h1 class="title">State of Online Media</h1>
+                <p>The digitization of media has lowered the barriers of entry to publishing and distribution, whilst algorithms, data and dynamic media have provided tools that increase its potency and addictiveness. This has led society to become increasingly less confident in information sources and more susceptible to influence.</p>
+                <div class="col-md-6">
+                    <h3 class="subtitle">Problems</h3>
+                    <ol>
+                        <li>Disinformation and misinformation have increased exponentially</li>
+                        <li>Media Bias Drives Polarisation</li>
+                        <li>Platforms Encourage Echo Chambers</li>
+                    </ol>
+                </div>
+                <div class="col-md-6">
+                    <h3 class="subtitle">Solutions</h3>
+                    <ol>
+                        <li>Detecting the percentage of disinformation</li>
+                        <li>Media Bias detection</li>
+                        <li>Anti-Echo Chambers - Alternative opinion-based content recommendations</li>
+                    </ol>
                 </div>
             </div>
             <div class="page-content">
@@ -100,11 +140,19 @@
                     <div class="col-md-6">
                         <div class="row">
                             <div class="col-6">
-                                <img src="assets/images/target.png" alt="Target">
+                                <picture>
+                                    <source type="image/webp" srcset="assets/images/webp/target.webp">
+                                    <source type="image/png" srcset="assets/images/target.png">
+                                    <img src="assets/images/target.png" alt="Target">
+                                </picture>
                                 <p>Reducing efficacy of polarizing content</p>
                             </div>
                             <div class="col-6">
-                                <img src="assets/images/check.png" alt="Check Mark">
+                                <picture>
+                                    <source type="image/webp" srcset="assets/images/webp/check.webp">
+                                    <source type="image/png" srcset="assets/images/check.png">
+                                    <img src="assets/images/check.png" alt="Check Mark">
+                                </picture>
                                 <p>Heightens trust in content through labelling</p>
                             </div>
                         </div>
@@ -112,11 +160,19 @@
                     <div class="col-md-6">
                         <div class="row">
                             <div class="col-6">
-                                <img src="assets/images/educate.png" alt="Educate">
+                                <picture>
+                                    <source type="image/webp" srcset="assets/images/webp/educate.webp">
+                                    <source type="image/png" srcset="assets/images/educate.png">
+                                    <img src="assets/images/educate.png" alt="Educate">
+                                </picture>
                                 <p>Educates users as to the political bias of content</p>
                             </div>
                             <div class="col-6">
-                                <img src="assets/images/balance.png" alt="Balance">
+                                <picture>
+                                    <source type="image/webp" srcset="assets/images/webp/balance.webp">
+                                    <source type="image/png" srcset="assets/images/balance.png">
+                                    <img src="assets/images/balance.png" alt="Balance">
+                                </picture>
                                 <p>Develops better media literacy among users</p>
                             </div>
                         </div>
@@ -130,10 +186,18 @@
                         <h3 class="subtitle">Disinformation Detection</h3>
                         <p>Disinformation is the single greatest threat to democracy and presents one of the most pressing challenges of our time! This will only worsen with the acceleration and availability of artificial intelligence.</p>
                         <p>Our platform helps identify three key areas of disinformation:</p>
-                        <img src="assets/images/disinf.png" alt="Disinformation">
+                        <picture>
+                            <source type="image/webp" srcset="assets/images/webp/disinf.webp">
+                            <source type="image/png" srcset="assets/images/disinf.png">
+                            <img src="assets/images/disinf.png" alt="Disinformation">
+                        </picture>
                     </div>
                     <div class="col-lg-6">
-                        <img src="assets/images/mockup2.png" alt="Laptop Mockup">
+                        <picture>
+                            <source type="image/webp" srcset="assets/images/webp/mockup2.webp">
+                            <source type="image/png" srcset="assets/images/mockup2.png">
+                            <img src="assets/images/mockup2.png" alt="Laptop Mockup">
+                        </picture>
                     </div>
                 </div>
                 <div class="row">
@@ -151,7 +215,11 @@
             </div>
             <div class="img-detection">
                 <h3 class="subtitle">Fake Image Detection</h3>
-                <img src="assets/images/fakeimg2.png" alt="Fake Image Detection Example">
+                <picture>
+                    <source type="image/webp" srcset="assets/images/webp/fakeimg2.webp">
+                    <source type="image/png" srcset="assets/images/fakeimg2.png">
+                    <img src="assets/images/fakeimg2.png" alt="Fake Image Detection Example">
+                </picture>
                 <p>The use of fake images to spread propaganda by augmenting the past or manipulating the present is as old as photography, but the rise of AI technology has made it easy for anyone with a laptop and an internet connection to create and distribute utra-realistic deep fakes.</p>
                 <p>We have built a solution that identifies manipulated objects, checks image authenticity, and verifies political figures to make sure we're serving society with real and trustworthy sources.</p>
             </div>
