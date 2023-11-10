@@ -380,6 +380,15 @@ footer p {
         margin-bottom: 1.5rem;
     }
 }
+@media screen and (max-width: 768px) {
+    .navbar-nav {
+        flex-direction: row;
+    }
+    .navbar-collapse {
+        display: flex;
+        justify-content: center !important;
+    }
+}
 @media screen and (max-width: 576px) {
     .header-content {
         padding-top: 3rem;
@@ -390,9 +399,6 @@ footer p {
     .contact form {
         width: 100%;
     }
-    .nav-item {
-        text-align: right;
-    }
 }
 @media screen and (max-width: 496px) {
     .header-content p {
@@ -402,7 +408,7 @@ footer p {
         font-size: 2.2rem;
     }
     #about {
-        margin-top: 22rem;
+        margin-top: 25rem;
     }
     .img-detection p {
         width: 100%;
@@ -442,7 +448,7 @@ footer p {
         width: 45px;
     }
 }
-@media screen and (min-width: 576px) {
+@media screen and (min-width: 768px) {
     .menu-toggle {
         opacity: 0;
         display: none;
