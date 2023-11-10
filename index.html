@@ -45,7 +45,6 @@
                                 <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
                                 <li class="nav-item"><a class="nav-link" href="#solutions">Solutions</a></li>
                                 <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-                                <li class="nav-item"><a class="nav-link" href="/landing">Landing</a></li>
                             </ul>
                         </div>
                     </nav>
@@ -190,4 +189,17 @@
             </div>
         </footer>
     </body>
+    <script>
+        const navLinks = document.querySelectorAll('.nav-item');
+        const menuToggle = document.getElementById('collapseNav');
+        const checkbox = document.getElementById('check');
+        const bsCollapse = new bootstrap.Collapse(menuToggle, { toggle: false });
+
+        navLinks.forEach((l) => {
+            l.addEventListener('click', () => {
+                bsCollapse.toggle();
+                checkbox.checked = false;
+            });
+        });
+    </script>
 </html>

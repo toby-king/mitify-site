@@ -408,7 +408,6 @@ footer p {
         flex-direction: row;
     }
     .navbar-collapse {
-        display: flex;
         justify-content: center !important;
     }
 }
