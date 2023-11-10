@@ -161,8 +161,9 @@ input[type="checkbox"]:checked ~ .hamburger {
     width: 100px;
     margin: 2rem 0;
 }
-.services h4 {
+.services h3 {
     font-weight: 700;
+    font-size: calc(1.275rem + .3vw);
 }
 .services p {
     width: 80%;
