@@ -491,15 +491,25 @@ footer p {
     }
 }
 @media screen and (max-height: 768px) {
-    .header {
+    .no-webp .header, .webp .header {
         max-height: 130vh;
     }
     #about {
         margin-top: 14rem;
     }
 }
-@media screen and (max-height: 576px) {
-    .header {
+@media screen and (max-height: 635px) {
+    .no-webp .header, .webp .header {
         max-height: 150vh;
+    }
+}
+@media screen and (max-height: 548px) {
+    .no-webp .header, .webp .header {
+        max-height: 180vh;
+    }
+}
+@media screen and (max-height: 420px) {
+    #mockup {
+        height: 30%;
     }
 }
