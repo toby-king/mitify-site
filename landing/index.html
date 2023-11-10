@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="theme-color" content="#fff">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Grammaly For Misinformation">
+        <meta property="og:image" content="../assets/images/preview.png">
+        <meta property="og:image:type" content="image/png">
+        <meta property="og:image:width" content="1200">
+        <meta property="og:image:height" content="630">
+
+        <title>Mitify+ | Grammarly for Disinformation</title>
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+        
+        <link rel="icon" href="../favicon.ico">
+        <link rel="stylesheet" href="../stylesheet.css">
+    </head>
+    <body>
+        <div class="container-fluid" id="page">
+            <div class="nav-wrapper landing-nav" id="top">
+                <nav class="navbar navbar-expand-md page-content" id="banner">
+                    <a href="/">
+                        <img src="../assets/images/icon.png" alt="Mitify+ Logo" class="logo"></img>
+                    </a>
+                    <h1 class="logo-title">MITIFY+</h1>
+            
+                    <div class=menu-toggle>
+                        <label for="check" onclick="checkCheck()">
+                            <input type="checkbox" id="check" data-toggle="collapse" data-target="#collapseNav">
+                            <div class="hamburger"></div>
+                        </label>
+                    </div>
+            
+                    <div class="collapse navbar-collapse justify-content-end" id="collapseNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#solutions">Solutions</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+            <div class="landing-content">
+                <h1 class="title mt-3">Have you seen what Mitify+ does?</h1>
+                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/4d04FytZBQ0?si=yb2MjT9v06Ry5fGW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <p>Fake news, disinformation and propaganda are the most pressing issues of our time that affect both citizens and corporations.</p>
+                <p>Compounding this threat is the democratisation of powerful AI software and the pervasive nature of social media platforms to disseminate disinformation.</p>
+                <p>We are building innovative solutions to help news consumers and organisations mitigate against the harmful effects of disinformation and propaganda in a seamless and elegant way.</p>
+                <p>We are conducting qualitative analysis to gather insights into how news consumers and organisations consume content.</p>
+                <p>To be included in our survey please fill out your details below.</p>
+                <p>Together, let's stem the flow of disinformation!</p>
+            </div>
+            <div class="landing-form">
+                <h1 class="title mb-4">Join Us</h1>
+                <form name="landing-form" method="POST" data-netlify="true" >
+                    <div class="form-group mb-4">
+                        <input required type="text" class="form-control" id="fname" placeholder="First Name" name="fname">
+                    </div>
+                    <div class="form-group mb-4">
+                        <input required type="text" class="form-control" id="lname" placeholder="Last Name" name="lname">
+                    </div>
+                    <div class="form-group mb-4">
+                        <input required type="text" class="form-control" id="company" placeholder="Company" name="company">
+                    </div>
+                    <div class="form-group mb-4">
+                        <input required type="text" class="form-control" id="position" placeholder="Position" name="position">
+                    </div>
+                    <button type="submit" class="btn btn-primary mt-2">Submit</button>
+                </form>
+            </div>
+        </div>
+        <footer>
+            <div class="footer-content">
+                <img src="../assets/images/icon.png" alt="Mitify+ Logo">
+                <p>&copy DTF Media Group Ltd. 2023.</p>
+            </div>
+        </footer>
+    </body>
+</html>

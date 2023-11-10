@@ -59,6 +59,9 @@ a:hover {
 .nav-item {
     margin: 0 1rem 0 1rem;
 }
+.landing-nav {
+    background-image: url("assets/images/header3.png");
+}
 .hamburger,
 .hamburger::before,
 .hamburger::after {
@@ -228,7 +231,7 @@ input[type="checkbox"]:checked ~ .hamburger {
 .contact form {
     width: 70%;
 }
-.contact button {
+.contact button, .landing-form button {
     background-color: #02498B;
     font-family: "Oswald";
     border-radius: 50px;
@@ -252,6 +255,23 @@ footer p {
     color: #fff;
     display: inline;
     letter-spacing: 1px;
+}
+.landing-content {
+    width: 100%;
+    max-width: 60vw;
+    margin: 0 auto;
+    text-align: center;
+}
+.landing-content iframe {
+    margin: 2rem 0;
+    height: 36vw;
+    width: 64vw;
+}
+.landing-form {
+    width: 100%;
+    max-width: 40vw;
+    margin: 0 auto;
+    margin-bottom: 10rem;
 }
 /* Animations */
 
@@ -359,6 +379,9 @@ footer p {
     }
     #mission-img {
         width: 80%;
+    }
+    .landing-form {
+        max-width: 60vw;
     }
 }
 @media screen  and (max-width: 800px) {
