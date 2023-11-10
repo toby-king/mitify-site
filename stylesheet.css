@@ -64,7 +64,7 @@ a:hover {
 .hamburger::after {
     content: "";
     display: block;
-    background: #00DC7F;
+    background: #fff;
     width: 1.5rem;
     height: 0.25rem;
 }
@@ -90,6 +90,9 @@ input[type="checkbox"]:checked ~ .hamburger::before {
 }
 input[type="checkbox"]:checked ~ .hamburger::after {
     transform: rotate(-45deg) translateX(0.15rem) translateY(-0.2rem);
+}
+input[type="checkbox"]:checked ~ .hamburger {
+    transform: translateY(-0.1rem);
 }
 .header-content {
     padding-top: 8rem;
@@ -160,7 +163,6 @@ input[type="checkbox"]:checked ~ .hamburger::after {
 }
 .valprop p {
     font-family: "Oswald";
-    letter-spacing: 3px;
     font-weight: 700;
     width: 60%;
     margin: 0 auto;
@@ -168,23 +170,26 @@ input[type="checkbox"]:checked ~ .hamburger::after {
 .mission {
     background-color: #F1F1F1;
     margin-top: 5rem;
+    padding: 1rem;
 }
 .mission-container {
     width: 80%;
     margin: 0 auto;
 }
+.mission-content {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+}
 #mission-img {
     width: 100%;
-}
-.mission h1 {
-    margin-top: 6.5rem;
 }
 .mission p {
     line-height: 175%; /* 63px */
     letter-spacing: 3.6px;
     font-size: 1.6rem;
     width: 90%;
-    margin-top: 2rem;
 }
 .solutions {
     margin-top: 5rem;
@@ -200,8 +205,9 @@ input[type="checkbox"]:checked ~ .hamburger::after {
     text-align: center;
 }
 .img-detection img {
-    width: 80%;
-    margin-bottom: 3rem;
+    width: 60%;
+    margin: 2rem 0;
+    box-shadow: 0px 0px 45px 17px rgba(0, 0, 0, 0.25);
 }
 .img-detection p, .img-detection h3 {
     color: #fff;
@@ -214,7 +220,6 @@ input[type="checkbox"]:checked ~ .hamburger::after {
     position: absolute;
     right: 0;
     z-index: -1;
-    height: 100%;
 }
 .contact {
     padding-top: 10rem;
@@ -246,7 +251,7 @@ footer p {
     font-family: "Oswald";
     color: #fff;
     display: inline;
-    letter-spacing: 2.5px;
+    letter-spacing: 1px;
 }
 /* Animations */
 
@@ -333,9 +338,126 @@ footer p {
   }
   
 /* Media Queries */
+@media screen and (max-width: 1172px) {
+    .header-content p {
+        font-size: 1.2rem;
+    }
+    .header-content h1 {
+        font-size: 2.8rem;
+    }
+}
+@media screen and (max-width: 992px) {
+    #mockup {
+        height: 60%;
+    }
+    .mission {
+        text-align: center;
+    }
+    .mission p {
+        font-size: 1.4rem;
+        width: 100%;
+    }
+    #mission-img {
+        width: 80%;
+    }
+}
+@media screen  and (max-width: 800px) {
+    .mockup-container {
+        text-align: center;
+        margin-top: 3rem;
+    }
+    #mockup {
+        height: 50%;
+    }
+    #about p {
+        width: 100%;
+    }
+    #about {
+        margin-top: 28rem;
+    }
+    .img-detection img {
+        width: 100%;
+        margin-bottom: 1.5rem;
+    }
+}
+@media screen and (max-width: 576px) {
+    .header-content {
+        padding-top: 3rem;
+    }
+    #about p {
+        font-size: 1rem;
+    }
+    .contact form {
+        width: 100%;
+    }
+    .nav-item {
+        text-align: right;
+    }
+}
+@media screen and (max-width: 496px) {
+    .header-content p {
+        width: 100%;
+    }
+    .header-content h1 {
+        font-size: 2.2rem;
+    }
+    #about {
+        margin-top: 22rem;
+    }
+    .img-detection p {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 425px) {
+    #about {
+        margin-top: 25rem;
+    }
+    .header-content h1 {
+        font-size: 1.8rem;
+    }
+    .header-content p {
+        font-size: 1.1rem;
+    }
+    .logo {
+        max-width: 4rem;
+    }
+    .logo-title {
+        margin-left: 0;
+    }
+    .mission p {
+        font-size: 1.2rem;
+    }
+    .valprop p {
+        width: 100%;
+    }
+    .servies img, .valprop img {
+        height: 80px;
+        width: 80px;
+    }
+    footer p {
+        font-size: 0.8rem;
+    }
+    footer img {
+        height: 45px;
+        width: 45px;
+    }
+}
 @media screen and (min-width: 576px) {
     .menu-toggle {
         opacity: 0;
         display: none;
+    }
+}
+@media screen and (max-height: 768px) {
+    .header {
+        max-height: 130vh;
+    }
+    #about {
+        margin-top: 14rem;
+    }
+}
+@media screen and (max-height: 576px) {
+    .header {
+        max-height: 150vh;
     }
 }
